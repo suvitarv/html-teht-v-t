@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+}
+
+.box {
+  height: 60px;
+  width: 25%;
+  border: 1px solid green;
+  color: whitesmoke;
+  display: block;
+  margin: 0;
+  padding: 0px;
+  float: left;
+}
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+a:active {
+  color:pink;
+}
+#first {
+  background-color: rgb(100, 192, 141);
+  text-align: center;
+}
+#second {
+  background-color: rgb(98, 201, 98);
+  text-align: center;
+}
+#third {
+  background-color: rgb(70, 204, 70);
+  text-align: center;
+}
+#fourth {
+  background-color: rgb(77, 180, 22);
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+  background-image: url(niitty.jpg);
+  padding: 10px;
+  border: 1px dashed rgb(65, 217, 156);
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+/* img */
+
+/* container */
+
+/* relative and absolute positioning with blue */
+
+
+
+p {
+  color: pink;
+}
+
+p {
+  color: rgb(0, 105, 105);
+  font-weight:bold;
+}
+.bigfont {
+  font-size: 26px;
+}
+
+#oranssi {
+  color: orange;
+}
+footer {
+  margin-top: 90px;
+  height: 100px;
+  padding-top: 30px;
+  border: 700px;
+  text-align: center;
+  background-color: rgb(61, 196, 122);
+}
+#chihuahua {
+  width: 200px;
+  float: left;
+  margin-top: 40px;
+}
+h1 {
+  text-align: center;
+  color:rgb(0, 120, 139);
+}
+h2 {
+  color:rgb(0, 120, 139);
+}
+h3 {
+  color:rgb(2, 152, 176);
+}
