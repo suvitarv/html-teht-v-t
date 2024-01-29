@@ -23,27 +23,36 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: black;
+  color: hotpink;
   text-decoration: underline;
+  transition: 5s;
 }
 a:active {
-  color:pink;
+  color:rgb(18, 6, 12);
 }
 #first {
   background-color: rgb(100, 192, 141);
   text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
 }
 #second {
   background-color: rgb(98, 201, 98);
   text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
 }
 #third {
   background-color: rgb(70, 204, 70);
   text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
 }
 #fourth {
   background-color: rgb(77, 180, 22);
   text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
 }
 
 .clear {
@@ -61,32 +70,18 @@ main {
   padding-left: 20px;
   position: relative;
 }
-
-/* img */
-
-/* container */
-
-/* relative and absolute positioning with blue */
-
-
-
-p {
-  color: pink;
+.clearfix::after {
+  clear: both;
+  display: table;
 }
 
 p {
   color: rgb(0, 105, 105);
   font-weight:bold;
 }
-.bigfont {
-  font-size: 26px;
-}
 
-#oranssi {
-  color: orange;
-}
 footer {
-  margin-top: 90px;
+  margin-top: 140px;
   height: 100px;
   padding-top: 30px;
   border: 700px;
@@ -101,6 +96,9 @@ footer {
 h1 {
   text-align: center;
   color:rgb(0, 120, 139);
+  margin-top: 50px;
+  padding-top: 50px;
+  
 }
 h2 {
   color:rgb(0, 120, 139);
@@ -108,16 +106,33 @@ h2 {
 h3 {
   color:rgb(2, 152, 176);
 }
-#mini {
-  background-color:beige;
-  width: 100px;
-  height: 100px;
+
+nav {
   position: fixed;
-  top: 50%;
-  right: 20px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%
 }
-#mini2 {
-  background-color: black;
-  width: 100px;
+#kukka {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+}
+#target {
   height: 100px;
+  width: 330px;
+  background-color: rgb(27, 142, 142);
+  left: 120px;
+  top: 150px;
+  position: absolute;
 }
+.color {
+  color:aliceblue;
+  font-size: x-small;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
