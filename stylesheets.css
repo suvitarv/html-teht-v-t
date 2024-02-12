@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+#taustis {
+  height: 30vh;
+  background-image: url(uinuva.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+} 
+
 body {
   margin: 0;
   font-family: "Courier New", Courier, monospace;
@@ -9,14 +19,16 @@ body {
 }
 
 .box {
-  height: 60px;
+  height: 40px;
   width: 25%;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   color: whitesmoke;
+  float: left;
   display: block;
   margin: 0;
   padding: 0px;
-  float: left;
+  
+
 }
 a:link {
   color: whitesmoke;
@@ -33,25 +45,25 @@ a:active {
 #first {
   background-color: rgb(100, 192, 141);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: bold;
 }
 #second {
   background-color: rgb(98, 201, 98);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: bold;
 }
 #third {
   background-color: rgb(70, 204, 70);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: bold;
 }
 #fourth {
   background-color: rgb(77, 180, 22);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: bold;
 }
 
@@ -108,12 +120,20 @@ h3 {
 }
 
 nav {
-  position: fixed;
+  /*position: ;*/
   top: 0;
-  left: 0;
+  /*right:100px;*/
   z-index: 100;
-  width: 100%
+  width: 80%;
+  margin:auto;
 }
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #kukka {
   width: 70px;
   height: 70px;
@@ -121,18 +141,40 @@ nav {
   top: -30px;
   right: 10px;
 }
-#target {
+.target {
   height: 100px;
   width: 330px;
   background-color: rgb(27, 142, 142);
-  left: 120px;
-  top: 150px;
-  position: absolute;
+  margin: 30px auto 10px;
+  padding: 10px;
+
+
 }
 .color {
   color:aliceblue;
   font-size: x-small;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top:5px;
+  
+  
 }
 
+
+@media screen and (max-width: 900px) {
+  #taustis {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+    width: 50%;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+  }
+
+}

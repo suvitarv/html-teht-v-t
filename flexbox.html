@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <style>
+      /*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+
+        */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .box {
+        border: 1px solid black;
+        color: aliceblue;
+       /* float: left;*/
+      }
+
+      #left {
+        flex: 1;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+      
+        
+      }
+      #right {
+        flex: 1;
+        background-color: rgb(224, 129, 129);
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      .container {
+        background-color: black;
+        height: 100vh;
+        display: flex;
+      }
+
+      .card {
+        background-color: aquamarine;
+        width: 300px;
+        height: 400px;
+      }
+      #kuva {
+        height: 400px;
+        width: 300px;
+      }
+     
+      .upper {
+        flex: 1;
+        background-color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: black;
+      }
+
+      .lower {
+        flex: 2;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+      }
+     
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="box" id="left">
+      <div class="card">
+        <img id="kuva" src="tuhmuri.jpg" alt="koira">
+      </div>
+    </div> 
+    <div class="box" id="right">
+      <div class="upper">
+        <h3>OTSIKKO</h3>
+      </div>
+      <div class="lower">Alempi 75%</div>
+    </div>
+    
+  </div>
+    <!-- Float continues, clearing -->
+
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magnam animi tenetur praesentium, magni dolor quibusdam quisquam. Sunt qui nesciunt ab! Animi ipsa commodi excepturi adipisci ratione nihil nemo accusamus.</p>
+
+    <!-- Responsive images and centering -->
+  </body>
+</html>

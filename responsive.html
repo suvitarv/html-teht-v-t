@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+}
+main {
+    padding: 40px;
+    margin: 20px;
+}
+/*iman mediasääntöjä kuvan keskittäminen ja koon muuttaminen */
+.fina {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+/* mobile first */
+.fina2 {
+    width: 100%;
+}
+
+.nav-iso {
+    display: none;
+}
+#taustakuva {
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+    background-image: url(pennut.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+@media screen and (min-width: 600px) {
+    .fina2 {
+        width: 600px;
+        display: block;
+        margin: auto;
+    }
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-iso {
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
+    .fina2 {
+        /*display: none;*/
+        /*visibility: hidden;*/
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+#taustakuva {
+    background-attachment: fixed;
+}
+}
+
+
+
+</style>
+</head>
+<body>
+<main>
+    <nav class="nav-iso">Tässä voisi olla NAVIGAATIO</nav>
+    <nav class="nav-mobile">Tässä voisi olla MOBIILI NAVIGAATIO</nav>
+    <h2>Normaalien IMG-Object Fit ja mediasäännöt</h2>
+
+    <img class="fina2" src="koirulli_laatikossa.jpg"/>
+
+    <h2>Taustakuva - Fixed ja Scroll</h2>
+
+    <div id="taustakuva">
+        <p>Moro</p>
+    </div>
+
+    <h2> Picture elementin käyttö</h2>
+
+    <picture>
+        <source srcset="unelias.jpg" media="(max-width: 100px)">
+        <source srcset="unelias.jpg">
+        <img src="unelias.jpg" alt="pennut" style="width:auto;">
+      </picture>
+
+<p id="info">Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime ratione cum? Facere voluptatem optio sapiente vero facilis non alias assumenda, minus eos, labore a laborum quae. Quos, voluptates quasi.</p>
+</main>
+</body>
+</html>

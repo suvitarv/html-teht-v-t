@@ -2,6 +2,7 @@
 <html lang="zxx">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positioning Items</title>
     <link rel="stylesheet" href="stylesheets.css">
     <style>
@@ -42,10 +43,12 @@
 
   <body>
     <nav class="clearfix">
-      <div class="box" id="first"> <a>Koti</a></div>
-      <div class="box" id="second"><a>Yhteystiedot</a></div>
-      <div class="box" id="third"><a>Tuotteet</a></div>
-      <div class="box" id="fourth"><a>Historia</a></div>
+      
+      <div class="box" id="first"><a href="#">Koti</a></div>
+      <div class="box" id="second"><a href="#">Yhteystiedot</a></div>
+      <div class="box" id="third"><a href="#">Tuotteet</a></div>
+      <div class="box" id="fourth"><a href="#">Historia</a></div>
+      <section id="taustis"></section>
     </nav>
     
 
@@ -54,7 +57,7 @@
     <h1>Tässä tarinaa tosielämästä</h1>
 <main>
 
-  
+
 
   <div id="mini">
     <img id="kukka" src="kukka.jpg" alt="kukka-nurkassa">
@@ -73,7 +76,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam dolorem at beatae eveniet iure doloribus expedita distinctio voluptates error iusto quis, commodi mollitia. Sint aspernatur voluptatum consectetur minima soluta.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis natus, vero fugit sit temporibus laudantium exercitationem voluptate libero voluptatem dolorum assumenda provident molestiae dolorem totam amet sed, dignissimos odio.</p>
 </main>
-<div id="target">
+<div class="target">
   <p class="color"> <span class="language"></span> </p>
   <p class="color"> <span class="screen_size"></span> </p>
   <p class="color"> <span class="browser_size"></span> </p>
