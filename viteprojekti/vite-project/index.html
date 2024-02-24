@@ -12,9 +12,53 @@
     
     <div class="show_joke"></div>
     <button class="chuck">Hae vitsi</button>
-  
-   
-    <script type="module" src="/main.js"></script>
+    <button class="toinen">Hae vitsin toinen nappula</button>
     
+    <h3> Tehtävä 2 - Kissakuvat </h3>
+
+    <figure>
+      <img src="http://placekitten.com/200/500" alt="Kissakuva"/>
+      <figcaption>Tähän tulee kissakuvan tiedot</figcaption>
+  </figure>
+  
+  <h2>Alle tulee generoidut kissakuvat</h2>
+
+
+  <div id="card">
+    <p>Tänne luodaan sisälle kortit</p>
+  </div>
+  
+
+    <button class="pics">Hae kissakuvat</button>
+    
+    <h3>Tehtävä 3 - Flexboxilla tehty kortti - Staattinen tieto</h3>
+
+    <div class="container">
+      <div class="card" id="left">
+        <img src="http://placekitten.com/200/500" alt="kis-kis">
+        <div class="card-content">
+          <h4>Treenipäiväkirja</h4>
+          <p>Tänään on ollut hyvä fiilis treenata ja tuloksia on tullut.</p>
+        </div>
+      </div>
+
+      <div class="card" id="right">
+        <img src="http://placekitten.com/200/500" alt="kis-kis">
+        <div class="card-content">
+          <h4>Treenipäiväkirja</h4>
+          <p>Olipas kiva treenipäivä tänään</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="js-cards">
+      <h3>Tehtävä 4 - Flexboxilla tehty kortti + Fetch omasta rajapinnasta + Itse luodut elementit</h3>
+    <div class="container" id="entries-container"></div>
+
+  
+    </section>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/joke.js"></script>
+    <script type="module" src="/diary.js"></script>
   </body>
 </html>

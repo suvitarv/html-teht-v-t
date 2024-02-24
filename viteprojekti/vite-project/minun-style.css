@@ -1,3 +1,64 @@
-h3 {
-    background-color: aquamarine;
+* {
+    box-sizing: border-box;
+}
+
+.show_joke {
+    background-color: gray;
+    height: 50px;
+}
+
+#cards {
+    min-height: 40px;
+    background-color: brown;
+}
+.container {
+    display: flex;
+    width: 150vh;
+    height: 50vh;
+    gap: 10vh; 
+
+}
+#left {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 1;
+    
+}
+#right {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 1;
+    
+    
+}
+
+.card img {
+    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 25px;
+    
+}
+
+.card {
+    width: 60vh;
+    display: flex;
+    
+}
+
+p {
+   padding: 5px;
+}
+h4 {
+    color: pink;
+    text-align: center;
+    font-size: medium;
 }
