@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const entriesContainer = document.getElementById('entries-container');
 
     // Fetch data from the API
-    fetch('http://localhost:3000/api/entries')
+    fetch('http://localhost:3002/api/entries')
         .then(response => response.json())
         .then(entries => {
             // Loop through the entries and create HTML elements to display them

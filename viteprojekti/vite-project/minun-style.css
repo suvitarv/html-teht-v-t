@@ -62,3 +62,17 @@ h4 {
     text-align: center;
     font-size: medium;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        width: 50%;
+    }
+    
+}
