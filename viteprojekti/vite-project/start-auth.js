@@ -9,7 +9,7 @@ createUser.addEventListener('click', async (evt) => {
   console.log('Nyt luodaan käyttäjä');
 
 
-  const url = 'http://127.0.0.1:3000/api/users';
+  const url = 'https://hyte-server-suvta.northeurope.cloudapp.azure.com/api/users';
 
   //# Create user
   //POST http://127.0.0.1:3000/api/users
@@ -56,7 +56,7 @@ loginUser.addEventListener('click', async (evt) => {
     //    "username": "user",
     //    "password": "secret"
     //  }
-    const url = 'http://127.0.0.1:3000/api/auth/login';
+    const url = 'https://hyte-server-suvta.northeurope.cloudapp.azure.com/api/auth/login';
   
    const form = document.querySelector('.login_form');
    //const username = form.querySelector('input[name=username]').value;
@@ -102,7 +102,7 @@ meRequest.addEventListener('click', async () => {
   //GET http://localhost:3000/api/auth/me
  // Authorization: Bearer (put-user-token-here)
 
-const url = 'http://localhost:3000/api/auth/me';
+const url = 'https://hyte-server-suvta.northeurope.cloudapp.azure.com/api/auth/me';
 const muntokeni = localStorage.getItem('token');
 console.log('Tämä on haettu localstoragesta', muntokeni);
 

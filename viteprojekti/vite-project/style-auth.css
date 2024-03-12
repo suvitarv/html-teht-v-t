@@ -30,6 +30,7 @@
     min-width: 320px;
     min-height: 100vh;
     margin: 16px;
+    
   }
   
   h1 {
@@ -240,3 +241,6 @@
       flex-direction: column;
     }
   }
+
+
+  
