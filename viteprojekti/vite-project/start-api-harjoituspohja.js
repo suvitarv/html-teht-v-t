@@ -218,7 +218,7 @@ async function getAllUsers() {
     console.log(error);
   }
 }
-// tehdään nyt tätä PUT toimintoon 
+// Päivitys funktio 
 
 const updateUser = document.querySelector(".update");
 
@@ -242,12 +242,6 @@ updateUser.addEventListener("click", async (evt) => {
 
   const username = form.querySelector("input[name=username]").value;
 
-  // kokeillaan ensin kovakoodattuna
-  // const body = {
-  //   username: 'testii',
-  //   password: 'testii',
-  //   email: 'testii@testii.fi',
-  // };
 
   const data = {
     username: username,
