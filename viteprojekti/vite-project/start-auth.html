@@ -12,17 +12,6 @@
 
     <h3>/api/users - CREATE USER</h3>
 
-    <pre><code>
-      # Create user
-      POST http://127.0.0.1:3000/api/users
-      content-type: application/json
-      
-      {
-        "username": "test-update4",
-        "password": "test-pw-update4",
-        "email": "update4@example.com"
-      }
-      </code></pre>
 
 
     <form class="create_user_form">
@@ -35,16 +24,7 @@
       <input name="submit" type="submit" value="Post and log to console" class="createuser" />
     </form>
     <h3>/api/auth - LOGIN USER</h3>
-    <pre><code>
-      # Login
-      POST http://localhost:3000/api/auth/login
-      content-type: application/json
-      
-      {
-        "username": "user",
-        "password": "secret"
-      }
-      </code></pre>
+    
     <div>
       <form class="login_form">
         <label for="username">Username</label>
@@ -59,10 +39,7 @@
     </div>
     <h3>/api/auth - USER INFO</h3>
     <div>
-      <pre><code>
-        # Get user info by token (requires token)
-        GET http://localhost:3000/api/auth/me
-        Authorization: Bearer (put-user-token-here)</code></pre>
+      
       <button id="meRequest">Make an "authenticated" request</button>
       <br />
       <h5>USER INFO:</h5>

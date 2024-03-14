@@ -218,3 +218,56 @@ async function getAllUsers() {
     console.log(error);
   }
 }
+// tehdään nyt tätä PUT toimintoon 
+
+const updateUser = document.querySelector(".update");
+
+updateUser.addEventListener("click", async (evt) => {
+  evt.preventDefault();
+  console.log('Nyt päivitetään tietoja')
+
+  const url = "https://hyte-server-suvta.northeurope.cloudapp.azure.com/api/users";
+  let muntokeni = localStorage.getItem("token");
+
+  const form = document.querySelector(".addform");
+
+  
+  if (!form.checkValidity()) {
+    // If the form is not valid, show the validation messages
+    form.reportValidity();
+    return; // Exit function if form is not valid
+  }
+
+  console.log("Tiedot valideja, jatketaan");
+
+  const username = form.querySelector("input[name=username]").value;
+
+  // kokeillaan ensin kovakoodattuna
+  // const body = {
+  //   username: 'testii',
+  //   password: 'testii',
+  //   email: 'testii@testii.fi',
+  // };
+
+  const data = {
+    username: username,
+    password: form.querySelector("input[name=password]").value,
+    email: form.querySelector("input[name=email]").value,
+  };
+
+  const options = {
+    method: "PUT", // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      Authorization: "Bearer: " + muntokeni,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  };
+
+  try {
+    const responseData = await fetchData(url, options);
+    console.log(responseData);
+  } catch (error) {
+    console.error(error);
+  }
+});

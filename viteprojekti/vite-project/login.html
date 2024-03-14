@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthdiary | login</title>
+    <link rel="stylesheet" href="/assets/css/form-styles.css">
+</head>
+<body>
+   
+ <!-- BACKGROUND-WRAPPER -->
+  <main class="background_wrapper">
+      <div class="login_form_wrapper">
+        <!-- FORM -->
+        <form action="#" class="login__form" id="login_form">
+          <h1 class="title">Login</h1>
+
+          <div class="login_form_content">
+            <!-- LOGIN-CONTENT-BOX-1 -->
+            <div class="login_content_box">
+              <ion-icon name="person-outline"></ion-icon>
+
+              <div class="login_content_box--input">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder=" "
+                  class="login__input username--input"
+                  required
+                />
+                <label for="username" class="login__label">Username</label>
+              </div>
+            </div>
+            <!-- LOGIN-CONTENT-BOX-2 -->
+            <div class="login_content_box">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+
+              <div class="login_content_box--input">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder=" "
+                  class="login__input password--input"
+                  required
+                />
+                <label for="password" class="login__label">Password</label>
+                <ion-icon
+                  class="password__hidden"
+                  id="password_hidden"
+                  name="eye-off-outline"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- REMEMBER-LOGIN -->
+           
+              <!-- FORGET PASSWORD -->
+            
+
+            <!-- LOGIN BUTTON -->
+            <button class="button__login" id="login_button">Login</button>
+            <!-- REGISTER LOGIN -->
+            <p class="register__login text--sm">
+              Don't have an account ? <a href="/register.html">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/start-auth.js"></script>
+</body>
+</html>
