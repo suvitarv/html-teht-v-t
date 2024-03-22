@@ -10,6 +10,7 @@
    
  <!-- BACKGROUND-WRAPPER -->
   <main class="background_wrapper">
+    <h1>Healthdiary</h1>
       <div class="login_form_wrapper">
         <!-- FORM -->
         <form action="#" class="login__form" id="register_form">
@@ -25,6 +26,8 @@
                   type="text"
                   name="username"
                   placeholder=" "
+                  minlength="3"
+                  maxlength="20"
                   class="login__input username--input"
                   required
                 />
@@ -40,6 +43,8 @@
                   type="password"
                   name="password"
                   placeholder=" "
+                  minlength="8"
+                  maxlength="128"
                   class="login__input password--input"
                   required
                 />
@@ -62,6 +67,7 @@
                   type="email"
                   name="email"
                   placeholder=" "
+                  pattern=".+@example\.fi"
                   class="login__input email--input"
                   required
                 />

@@ -13,6 +13,7 @@ const fetchData = async (url, options = {}) => {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} - ${response.statusText}`);
       }
+     
   // tähän kohtaan virheen hallinta väärästä käyttäjä tunnuksesta tai salasanasta
       jsonData = await response.json();
     } catch (error) {

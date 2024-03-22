@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthdiary | login</title>
-    <link rel="stylesheet" href="/assets/css/form-styles.css">
-</head>
-<body>
-   
- <!-- BACKGROUND-WRAPPER -->
-  <main class="background_wrapper">
+    <link rel="stylesheet" href="/assets/css/form-styles.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND-WRAPPER -->
+    <main class="background_wrapper">
+      <h1>HealthDiary</h1>
       <div class="login_form_wrapper">
         <!-- FORM -->
         <form action="#" class="login__form" id="login_form">
@@ -25,6 +25,7 @@
                   type="text"
                   name="username"
                   placeholder=" "
+                  minlength="3"
                   class="login__input username--input"
                   required
                 />
@@ -39,7 +40,8 @@
                 <input
                   type="password"
                   name="password"
-                  placeholder=" "
+                  placeholder=""
+                  minlength="8"
                   class="login__input password--input"
                   required
                 />
@@ -51,10 +53,6 @@
                 ></ion-icon>
               </div>
             </div>
-            <!-- REMEMBER-LOGIN -->
-           
-              <!-- FORGET PASSWORD -->
-            
 
             <!-- LOGIN BUTTON -->
             <button class="button__login" id="login_button">Login</button>
@@ -66,6 +64,7 @@
         </form>
       </div>
     </main>
+
     <script type="module" src="/start-auth.js"></script>
-</body>
+  </body>
 </html>
